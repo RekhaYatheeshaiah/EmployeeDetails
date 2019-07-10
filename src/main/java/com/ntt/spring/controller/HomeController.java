@@ -51,7 +51,7 @@ public class HomeController {
 	@RequestMapping(value = "/Register", method = RequestMethod.POST)
 	public String userSignup(@Validated User user, Model model) throws SQLException {
 		System.out.println("SignUp Page Requested");
-		System.out.println("hi!!");
+		System.out.println("hiiiii!!");
 		String userName=user.getUserName();
 		String password=user.getPassword();
 		boolean result= signupService.sign(userName, password);
